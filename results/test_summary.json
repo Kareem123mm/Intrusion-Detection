@@ -1,0 +1,24 @@
+{
+  "model": "RandomForest",
+  "threshold": 0.33,
+  "test_samples": 175341,
+  "metrics": {
+    "accuracy": 0.9324915450465093,
+    "precision": 0.9120885018169552,
+    "recall": 0.996899640525888,
+    "f1_score": 0.952610107334884,
+    "roc_auc": 0.8943870875863522
+  },
+  "confusion_matrix": {
+    "tn": 44533,
+    "fp": 11467,
+    "fn": 370,
+    "tp": 118971
+  },
+  "attack_detection": {
+    "total": 119341,
+    "detected": 118971,
+    "missed": 370,
+    "rate": 99.68996405258879
+  }
+}

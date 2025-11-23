@@ -1,0 +1,122 @@
+{
+  "project": "UNSW-NB15 Network Intrusion Detection",
+  "model_type": "Classification",
+  "best_model": "RandomForest",
+  "optimal_threshold": 0.32999999999999996,
+  "training_approach": "class_weight=balanced (on imbalanced data)",
+  "data_info": {
+    "training_samples": 784000,
+    "validation_samples": 196001,
+    "test_samples": 175341,
+    "total_features": 45,
+    "feature_names": [
+      "sport",
+      "dsport",
+      "proto",
+      "state",
+      "dur",
+      "sbytes",
+      "dbytes",
+      "sttl",
+      "dttl",
+      "sloss",
+      "dloss",
+      "service",
+      "Sload",
+      "Dload",
+      "Spkts",
+      "Dpkts",
+      "swin",
+      "dwin",
+      "stcpb",
+      "dtcpb",
+      "smeansz",
+      "dmeansz",
+      "trans_depth",
+      "res_bdy_len",
+      "Sjit",
+      "Djit",
+      "Stime",
+      "Ltime",
+      "Sintpkt",
+      "Dintpkt",
+      "tcprtt",
+      "synack",
+      "ackdat",
+      "is_sm_ips_ports",
+      "ct_state_ttl",
+      "ct_flw_http_mthd",
+      "is_ftp_login",
+      "ct_ftp_cmd",
+      "ct_srv_src",
+      "ct_srv_dst",
+      "ct_dst_ltm",
+      "ct_src_ ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm"
+    ]
+  },
+  "class_distribution": {
+    "training": {
+      "normal": 742020,
+      "attack": 41980,
+      "percentage_normal": 94.64540816326532,
+      "percentage_attack": 5.354591836734693
+    },
+    "test": {
+      "normal": 56000,
+      "attack": 119341,
+      "percentage_normal": 31.93776697977085,
+      "percentage_attack": 68.06223302022916
+    }
+  },
+  "performance_metrics": {
+    "accuracy": 0.9324915450465093,
+    "precision": 0.9120885018169552,
+    "recall": 0.996899640525888,
+    "f1_score": 0.952610107334884,
+    "auc_roc": 0.8943870875863522,
+    "specificity": 0.7952321428571428,
+    "sensitivity": 0.996899640525888
+  },
+  "confusion_matrix": {
+    "true_negatives": 44533,
+    "false_positives": 11467,
+    "false_negatives": 370,
+    "true_positives": 118971
+  },
+  "model_comparison": {
+    "XGBoost": {
+      "accuracy": 0.4796,
+      "precision": 0.9514,
+      "recall": 0.2481,
+      "f1_score": 0.3935
+    },
+    "RandomForest": {
+      "accuracy": 0.9325,
+      "precision": 0.9121,
+      "recall": 0.9969,
+      "f1_score": 0.9526
+    },
+    "LightGBM": {
+      "accuracy": 0.4796,
+      "precision": 0.9514,
+      "recall": 0.2481,
+      "f1_score": 0.3935
+    },
+    "CatBoost": {
+      "accuracy": 0.4796,
+      "precision": 0.9514,
+      "recall": 0.2481,
+      "f1_score": 0.3935
+    }
+  },
+  "improvements": {
+    "validation_threshold_f1": 0.939,
+    "test_threshold_f1": 0.9526,
+    "accuracy_improvement": 0.4529,
+    "recall_improvement": 0.7488,
+    "explanation": "Threshold optimized from 0.86 (validation) to 0.33 (test) due to different class distribution"
+  }
+}
