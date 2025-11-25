@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-11-25T02:44:32.165751",
+  "test_type": "Complete Test File",
+  "total_sequences": 17532,
+  "threshold": 0.18511781692504883,
+  "metrics": {
+    "accuracy": 0.6870294318959617,
+    "precision": 0.6900294440274811,
+    "recall": 0.9902236951118476,
+    "f1_score": 0.8133101969990814,
+    "roc_auc": 0.45781940875225297,
+    "specificity": 0.01702673013548151,
+    "sensitivity": 0.9902236951118476
+  },
+  "confusion_matrix": {
+    "true_negatives": 93,
+    "false_positives": 5369,
+    "false_negatives": 118,
+    "true_positives": 11952
+  },
+  "statistics": {
+    "min_error": 0.05701324716210365,
+    "max_error": 79.01724243164062,
+    "mean_error": 0.8413318395614624,
+    "std_error": 2.124744176864624
+  }
+}

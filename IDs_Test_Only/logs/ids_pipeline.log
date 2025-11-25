@@ -1,0 +1,53 @@
+2025-11-25 02:01:04,636 - IDS_Logger - INFO - ================================================================================
+2025-11-25 02:01:04,640 - IDS_Logger - INFO - Starting Sequence-Level Intrusion Detection Pipeline
+2025-11-25 02:01:04,644 - IDS_Logger - INFO - ================================================================================
+2025-11-25 02:01:18,595 - IDS_Logger - INFO - Starting dataset download from Kaggle
+2025-11-25 02:01:21,602 - IDS_Logger - INFO - Dataset downloaded successfully to: /kaggle/input/unsw-nb15
+2025-11-25 02:02:15,108 - IDS_Logger - INFO - Loading dataset files
+2025-11-25 02:11:58,682 - IDS_Logger - INFO - Starting dataset download from Kaggle
+2025-11-25 02:12:00,668 - IDS_Logger - INFO - Dataset downloaded successfully to: /kaggle/input/unsw-nb15
+2025-11-25 02:12:13,914 - IDS_Logger - INFO - Finding specific dataset files
+2025-11-25 02:12:13,967 - IDS_Logger - INFO - Training file copied to /content/data/UNSW_NB15_training-set.csv
+2025-11-25 02:12:14,035 - IDS_Logger - INFO - Testing file copied to /content/data/UNSW_NB15_testing-set.csv
+2025-11-25 02:12:32,016 - IDS_Logger - INFO - Loading data files
+2025-11-25 02:12:33,233 - IDS_Logger - INFO - Data loaded - Train: (82332, 45), Test: (175341, 45)
+2025-11-25 02:12:50,384 - IDS_Logger - INFO - Starting data preprocessing
+2025-11-25 02:13:51,638 - IDS_Logger - INFO - Starting data preprocessing
+2025-11-25 02:14:46,178 - IDS_Logger - INFO - Starting data preprocessing
+2025-11-25 02:14:48,331 - IDS_Logger - INFO - Scaler saved
+2025-11-25 02:14:48,342 - IDS_Logger - INFO - Preprocessing complete - Train: (82332, 43), Test: (175341, 43)
+2025-11-25 02:14:48,350 - IDS_Logger - INFO - Class distribution - Train Normal: 37000, Attack: 45332
+2025-11-25 02:14:48,358 - IDS_Logger - INFO - Class distribution - Test Normal: 56000, Attack: 119341
+2025-11-25 02:16:37,525 - IDS_Logger - INFO - Constructing sequences
+2025-11-25 02:16:38,945 - IDS_Logger - INFO - Sequences created - Train: (6584, 30, 43), Val: (1647, 30, 43), Test: (17532, 30, 43)
+2025-11-25 02:16:38,965 - IDS_Logger - INFO - Building model architecture
+2025-11-25 02:16:40,087 - IDS_Logger - INFO - Model architecture created
+2025-11-25 02:19:05,680 - IDS_Logger - INFO - Model compiled
+2025-11-25 02:19:25,824 - IDS_Logger - INFO - Starting training
+2025-11-25 02:20:45,078 - IDS_Logger - INFO - Constructing sequences
+2025-11-25 02:20:45,536 - IDS_Logger - INFO - Sequences created - Train: (6584, 30, 43), Val: (1647, 30, 43), Test: (17532, 30, 43)
+2025-11-25 02:21:15,348 - IDS_Logger - INFO - Building model architecture
+2025-11-25 02:21:15,836 - IDS_Logger - INFO - Model architecture created
+2025-11-25 02:21:32,207 - IDS_Logger - INFO - Model compiled
+2025-11-25 02:21:45,810 - IDS_Logger - INFO - Starting training
+2025-11-25 02:23:01,478 - IDS_Logger - INFO - Building model architecture
+2025-11-25 02:23:03,238 - IDS_Logger - INFO - Model architecture created
+2025-11-25 02:23:15,798 - IDS_Logger - INFO - Model compiled
+2025-11-25 02:23:24,881 - IDS_Logger - INFO - Starting training
+2025-11-25 02:36:26,703 - IDS_Logger - INFO - Training completed, model saved
+2025-11-25 02:39:27,883 - IDS_Logger - INFO - Computing reconstruction errors
+2025-11-25 02:39:55,012 - IDS_Logger - INFO - Reconstruction errors computed
+2025-11-25 02:39:58,100 - IDS_Logger - INFO - Optimizing anomaly detection threshold
+2025-11-25 02:39:58,195 - IDS_Logger - INFO - Optimal threshold: 0.185118, F1: 0.6664
+2025-11-25 02:40:14,172 - IDS_Logger - INFO - Evaluating on test set
+2025-11-25 02:40:14,219 - IDS_Logger - INFO - Test evaluation - Acc: 0.6870, Prec: 0.6900, Rec: 0.9902, F1: 0.8133
+2025-11-25 02:40:31,906 - IDS_Logger - INFO - Saving results
+2025-11-25 02:40:32,068 - IDS_Logger - INFO - Results saved successfully
+2025-11-25 02:40:42,438 - IDS_Logger - INFO - Pipeline execution completed successfully
+2025-11-25 02:40:42,440 - IDS_Logger - INFO - ================================================================================
+2025-11-25 02:42:34,388 - IDS_Logger - INFO - Testing model on complete test file
+2025-11-25 02:44:06,833 - IDS_Logger - INFO - Testing model on complete test file
+2025-11-25 02:44:07,104 - IDS_Logger - INFO - Model, scaler, and threshold loaded successfully
+2025-11-25 02:44:10,002 - IDS_Logger - INFO - Making predictions on entire test set
+2025-11-25 02:44:32,257 - IDS_Logger - INFO - Complete test evaluation - Acc: 0.6870, F1: 0.8133, ROC: 0.4578
+2025-11-25 02:44:32,262 - IDS_Logger - INFO - Complete test evaluation finished
